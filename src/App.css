@@ -66,3 +66,9 @@ margin-left:500px;
   margin-right:30px;
   margin-bottom:10px;
 }
+.filter
+{text-align: center;
+  display: flex;
+flex-direction: row;margin-left: 80px;}
+.bt1{background-color: rgb(159, 218, 93);margin-left:5px;}
+.bt2{background-color: #f07b5e; margin-left:5px;}

@@ -47,11 +47,20 @@ export const TodoSlice = createSlice({
             title:action.payload.edit.title,
             description:action.payload.edit.description,
         }
-    }
-  },
+    },
+    filterlist:(state,action)=>{
+        state.todolist=state.todolist.filter((el)=>el.isDone=== true)
+    
+      },
+      filternot:(state,action)=>{
+        state.todolist=state.todolist.filter((el)=>el.isDone=== false)
+    
+      },
+  }
+ 
 })
 
 
-export const { addtask ,removetask ,editaskk } = TodoSlice.actions
+export const { addtask ,removetask ,editaskk ,filterlist, filternot} = TodoSlice.actions
 
 export default TodoSlice.reducer

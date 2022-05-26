@@ -3,12 +3,13 @@ import { Button } from 'react-bootstrap'
 import {useDispatch } from 'react-redux'
 import { removetask } from '../Redux/TodoSlice'
 import Toedit from './Toedit'
+
 const Todoitems = ({todo}) => {
     const dispatch = useDispatch()
   return (
 
     <div className={`item ${todo.isDone? "done" : "notdone"}`} >
-       
+    
        <h1>{todo.title}</h1>
     
        <p>{todo.description}</p>
